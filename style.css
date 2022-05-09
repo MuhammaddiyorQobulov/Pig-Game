@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1530px;
+  height: 745px;
+  border: 1px solid red;
+  background: linear-gradient(to bottom right, red, #f4009a, #f544f5);
+}
+body .container {
+  width: 60%;
+  height: 80%;
+  padding: 50px 30px;
+  box-shadow: 5px 5px 20px #626161, -5px -5px 20px #626161;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgba(202, 202, 202, 0.8) 50%, #bdbdbd 50%);
+}
+body .container .newGame {
+  width: 20%;
+  height: 35px;
+  margin-left: 40%;
+  border: none;
+  background-color: white;
+  border-radius: 30px;
+  color: #4e4e4e;
+  font-size: 20px;
+  cursor: pointer;
+}
+body .container .newGame:active {
+  background-color: dodgerblue;
+  color: white;
+}
+body .container .players {
+  display: flex;
+  justify-content: space-around;
+  font-size: 26px;
+  margin-top: 30px;
+  color: #392a30;
+}
+body .container .ball {
+  display: flex;
+  justify-content: space-around;
+  font-size: 80px;
+  margin-top: 40px;
+  padding: 0 100px;
+  color: red;
+}
+body .container .ball .currentBall {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+body .container .playBoard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 120px;
+  padding: 0 80px;
+}
+body .container .playBoard .currentScore {
+  width: 25%;
+  height: 100px;
+  background-color: #b51d56;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .playBoard .currentScore div {
+  margin-top: 5px;
+  font-size: 40px;
+  font-weight: 100;
+}
+body .container .playBoard .btns {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+body .container .playBoard .btns button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+body .container .playBoard .btns button:active {
+  background-color: #efed40;
+  color: red;
+}
+body .container .playBoard .btns button:hover {
+  opacity: 0.8;
+}
